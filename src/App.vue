@@ -1,15 +1,15 @@
 <template>
-  <PokemonPage />
+  <router-view />
 </template>
 
 <script>
 import "./styles/animation.css";
 import "./styles/main.css";
-import PokemonPage from "./pages/PokemonPage";
+// import PokemonPage from "./pages/PokemonPage";
 
 export default {
   components: {
-    PokemonPage
+    // PokemonPage
   }
 }
 </script>
