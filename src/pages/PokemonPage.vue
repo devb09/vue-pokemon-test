@@ -4,7 +4,7 @@
     <h1>¿Quién es este Pokemon?</h1>
     <PokemonImage v-bind:pokemonId="pokemon.id" :showPokemon="showPokemon" />
     <PokemonOptions :pokemons="pokemonArr" @select-pokemon="checkAnswer" />
-
+    <!-- <router-link :to="{name:'pokemon-id',params:{id:85}}">Got to 50</router-link> -->
     <template v-if="showAnswer">
       <h2 class="fade-in">{{ msg }}</h2>
       <button @click="newGame">Nuevo juego</button>
@@ -51,7 +51,7 @@ export default {
       this.showAnswer = false;
       this.pokemonArr = [];
       this.pokemon = null;
-      this.mixPokemonArr()
+      this.mixPokemonArr();
     },
   },
   mounted() {
