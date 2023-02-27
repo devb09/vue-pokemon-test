@@ -37,6 +37,7 @@ export default {
   height: 200px;
   display: flex;
   justify-content: center;
+  margin: 2rem 0;
 }
 img {
   height: 200px;
