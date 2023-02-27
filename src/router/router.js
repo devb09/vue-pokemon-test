@@ -4,13 +4,13 @@ import PokemonPage from "@/pages/PokemonPage";
 const routes = [
   {
     path: "/",
-    name: 'home',
+    name: "home",
     component: () =>
       import(/* webpackChunkName:"GamePage" */ "@/pages/PokemonPage"),
   },
   {
     path: "/pokemonDetail/:id",
-    name: 'pokemon-id',
+    name: "pokemon-id",
     component: () =>
       import(/* webpackChunkName:"DetailPage" */ "@/pages/PokemonDetail"),
     props: (route) => {
@@ -25,6 +25,11 @@ const router = createRouter({
   // 4. Provide the history implementation to use. We are using the hash history for simplicity here.
   history: createWebHashHistory(),
   routes, // short for `routes: routes`
+});
+
+router.beforeEach(( to, from, next ) => {
+  console.log({to, from, next});
+  next()
 });
 
 export default router;
