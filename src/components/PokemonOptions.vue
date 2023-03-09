@@ -39,6 +39,7 @@ li {
   margin-bottom: 10px;
   width: 250px;
   padding: 10px 5px;
+  text-transform: uppercase;
 }
 
 li:hover {
