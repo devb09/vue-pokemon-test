@@ -38,6 +38,7 @@ li {
   cursor: pointer;
   margin-bottom: 10px;
   width: 250px;
+  padding: 10px 5px;
 }
 
 li:hover {
