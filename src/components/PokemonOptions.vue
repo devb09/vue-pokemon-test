@@ -27,7 +27,6 @@ export default {
 </script>
 
 <style>
-/* Pokemon Options */
 ul {
   list-style-type: none;
 }
